@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicMoose</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="controls">
+        <label for="scale-select">スケール:</label>
+        <select id="scale-select">
+            <option value="chromatic">Chromatic Scale</option>
+            <option value="minor">Minor Scale</option>
+            <option value="major_pentatonic">Major Pentatonic Scale</option>
+            <option value="minor_pentatonic">Minor Pentatonic Scale</option>
+            <option value="ryukyu">Ryukyu Scale</option>
+        </select>
+
+        <label for="tempo-slider">記録間隔 (ms):</label>
+        <input type="range" id="tempo-slider" min="50" max="500" value="150">
+        <span id="tempo-value">150</span>
+
+        <button id="clear-btn">Clear</button>
+    </div>
+
+    <div id="canvas-container">
+        <canvas id="canvas" width="800" height="600"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
